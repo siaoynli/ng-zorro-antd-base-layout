@@ -9,11 +9,10 @@ export const mainRoutes: Routes = [
       import('../app/pages/login/login.module').then((m) => m.LoginModule),
   },
   {
-    path: 'admin',
+    path: '',
     loadChildren: () =>
       import('../app/layout/index/index.module').then((x) => x.IndexModule),
   },
-  { path: '', pathMatch: 'full', redirectTo: environment.layout },
 ];
 
 // 框架页中对应的路由，指向具体的页面  框架页面中的路由都会带上顶级路由 admin  如：/admin/workplace
