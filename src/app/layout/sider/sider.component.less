@@ -1,0 +1,63 @@
+.sidebar-logo {
+  position: relative;
+  height: 64px;
+  padding-left: 24px;
+  overflow: hidden;
+  line-height: 64px;
+  background: #001529;
+  transition: all 0.3s;
+}
+
+.sidebar-logo img {
+  display: inline-block;
+  height: 32px;
+  width: 32px;
+  vertical-align: middle;
+}
+
+.sidebar-logo h1 {
+  display: inline-block;
+  margin: 0 0 0 20px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  font-family: Avenir, Helvetica Neue, Arial, Helvetica, sans-serif;
+  vertical-align: middle;
+}
+
+.app-menu {
+  overflow-y: auto;
+  position: absolute;
+  top: 64px;
+  left: 0;
+  right: 0;
+  bottom: 40px;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+/*垂直滚动条的样式vertical  horizontal  */
+::-webkit-scrollbar-thumb:vertical {
+  background-color: rgb(231, 231, 231);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #8ac6ff;
+  border-radius: 4px;
+}
+
+/*滚动条的背景颜色*/
+::-webkit-scrollbar-track-piece {
+  background-color: #001529;
+  border-radius: 0;
+}
+
+::-webkit-scrollbar-thumb:active {
+  height: 50px;
+  background-color: #5bb0ff;
+  border-radius: 4px;
+}

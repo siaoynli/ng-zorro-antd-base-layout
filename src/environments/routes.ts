@@ -11,7 +11,7 @@ export const mainRoutes: Routes = [
   {
     path: '',
     loadChildren: () =>
-      import('../app/layout/index/index.module').then((x) => x.IndexModule),
+      import('../app/layout/index.module').then((x) => x.IndexModule),
   },
 ];
 
