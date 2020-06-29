@@ -3,7 +3,12 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  layout: 'admin',
+  // 默认的首页
+  defaultPage: 'dashboard',
+  // Api请求地址
+  api: 'http://localhost:3000/',
 };
 
 /*
