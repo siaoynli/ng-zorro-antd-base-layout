@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, SimpleChanges } from '@angular/core';
 
 @Component({
   selector: 'app-sider',
@@ -7,7 +7,26 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class SiderComponent implements OnInit {
   @Input() isCollapsed: boolean;
-  constructor() {}
+  menuMap: { [name: string]: boolean } = {
+    sub1: true,
+    sub2: false,
+    sub3: false,
+  };
+  constructor() {
+    console.log('isCollapsed', this.isCollapsed);
+  }
 
   ngOnInit(): void {}
+
+  ngOnChanges(changes: SimpleChanges): void {
+    console.log('isCollapsed', this.isCollapsed);
+  }
+
+  openHandler(value: string): void {
+    for (const key in this.menuMap) {
+      if (key !== value) {
+        this.menuMap[key] = false;
+      }
+    }
+  }
 }

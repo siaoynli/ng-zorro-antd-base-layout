@@ -25,7 +25,15 @@
     "moduleResolution": "node",
     "importHelpers": true,
     "target": "es2015",
-    "lib": ["es2018", "dom"]
+    "lib": ["es2018", "dom"],
+    "paths": {
+      "@env/*": ["src/environments/*"],
+      "@share/*": ["src/share/*"],
+      "@services/*": ["src/services/*"],
+      "@app": ["src/app"],
+      "@layout/*": ["src/app/layout/*"],
+      "@pages/*": ["src/app/pages/*"]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, SimpleChanges } from '@angular/core';
 
 @Component({
   selector: 'app-index',
@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./index.component.less'],
 })
 export class IndexComponent implements OnInit {
-  isCollapsed = false;
+  isCollapsed = true;
   constructor() {}
 
   ngOnInit(): void {}

@@ -11,7 +11,13 @@
   [nzInlineCollapsed]="isCollapsed"
   class="app-menu"
 >
-  <li nz-submenu nzOpen nzTitle="仪表盘" nzIcon="dashboard">
+  <li
+    nz-submenu
+    [(nzOpen)]="menuMap.sub1"
+    (nzOpenChange)="openHandler('sub1')"
+    nzTitle="仪表盘"
+    nzIcon="dashboard"
+  >
     <ul>
       <li nz-menu-item nzMatchRouter>
         <a routerLink="/dashboard/workspace"
@@ -31,7 +37,13 @@
     </ul>
   </li>
 
-  <li nz-submenu nzOpen nzTitle="Form" nzIcon="form">
+  <li
+    nz-submenu
+    [(nzOpen)]="menuMap.sub2"
+    (nzOpenChange)="openHandler('sub2')"
+    nzTitle="Form"
+    nzIcon="form"
+  >
     <ul>
       <li nz-menu-item nzMatchRouter>
         <a>Basic Form</a>

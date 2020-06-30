@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouteReuseStrategy, RouterModule, Routes } from '@angular/router';
-import { mainRoutes } from '../environments/routes';
+import { mainRoutes } from '@env/routes';
 
 @NgModule({
   imports: [RouterModule.forRoot(mainRoutes)],
